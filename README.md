@@ -14,23 +14,18 @@ Compared to previous work that attempted to predict flight delay based on weathe
 # Methods
 
 * *M-estimate Encoding (category_encoders.m_estimate.MEstimateEncoder):* * 
-
 M-estimate encoding is a preprocessing method for categorical variables that encodes the posterior probability of the target given a categorical value (zEquation 1). N is the total sample count of a particular category while n is the count of samples with target = 1 and this category. pa is the prior probability. m is the additive smoothing factor for reducing overfitting. It was used in this project to handle categorical variables with too many classes (i.e., > 400).
 
 * *Logistic Regression (sklearn.linear_model.LogisticRegression):* *
-* 
 Logistic regression is a model that predicts the probability of a certain binary class. Specifically, it uses a logistic function (Equation 2) with input of a linear combination of independent variables to estimate the probabilities. It was used in this project as it is a basic attempt for predicting a binary target variable.
 
 * *Decision Tree Classifier (sklearn.tree.DecisionTreeClassifier):* *
-* 
 Decision tree is a tree-like algorithm that can be used for binary classification for this project. Each node is a condition on one of the independent variables that leads to a prediction of target (or the probability of each class of target).
 
 * *Random Forest Classifier (sklearn.ensemble.RandomForestClassifier)* *
-* 
 Random forest is an ensemble method that predicts the target class based on averaging the predictions of multiple decision trees, which is usually more powerful than a single decision tree as this bootstrapping procedure will reduce the variance of the overall model while maintaining low bias. It was used in this project as a comparison to the more basic decision tree classifier.
 
 * *Categorical Naive Bayes Classifier (sklearn.naive_bayes.CategoricalNB)* *
-* 
 Naive Bayes is a statistical model based on Bayes’ theorem and the assumption that the condition features are all independent to each other. Classes are predicted with Equation 3. Specifically, Categorical naive bayes estimates the likelihood P(xi|y)with the same equation used in m-estimate encoding (Equation 1). It was used in this project for its more direct use of posterior probabilities for prediction in contrast to m-estimate, which is a preprocessing step before a selected model was applied on the data.
 
 <img width="964" alt="Screenshot 2021-12-24 at 6 01 34 PM" src="https://user-images.githubusercontent.com/73702692/147373869-6b3cd849-006e-4fd0-8181-3ee860830f4f.png">
