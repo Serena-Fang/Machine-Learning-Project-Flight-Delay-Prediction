@@ -14,7 +14,7 @@ Compared to previous work that attempted to predict flight delay based on weathe
 # Methods
 
 * *M-estimate Encoding (category_encoders.m_estimate.MEstimateEncoder):* * 
-* 
+
 M-estimate encoding is a preprocessing method for categorical variables that encodes the posterior probability of the target given a categorical value (zEquation 1). N is the total sample count of a particular category while n is the count of samples with target = 1 and this category. pa is the prior probability. m is the additive smoothing factor for reducing overfitting. It was used in this project to handle categorical variables with too many classes (i.e., > 400).
 
 * *Logistic Regression (sklearn.linear_model.LogisticRegression):* *
