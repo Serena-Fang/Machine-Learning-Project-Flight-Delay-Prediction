@@ -96,9 +96,10 @@ Finally, we had several considerations for future improvement. Firstly, besides 
 (https://drive.google.com/drive/folders/1lUGmQqyiSFFVjII-tNU4h19MMtxJ0afZ?usp=sharing)
 
 # Citations
-* *Cost of Delay Estimates 2019 - Federal Aviation Administration.* * 8 July 2020, https://www.faa.gov/ data_research/aviation_data_statistics/media/cost_delay_estimates.pdf.
-* 
-Etani, Noriko. “Development of a Predictive Model for on-Time Arrival Flight of Airliner by Discovering Correlation between Flight and Weather Data - Journal of Big Data.” * *SpringerOpen* * , Springer International Publishing, 20 Sept. 2019, https://journalofbigdata.springeropen.com/articles/10.1186/ s40537-019-0251-y.
+* *Cost of Delay Estimates 2019 - Federal Aviation Administration.* 8 July 2020, https://www.faa.gov/ data_research/aviation_data_statistics/media/cost_delay_estimates.pdf.
+
+Etani, Noriko. “Development of a Predictive Model for on-Time Arrival Flight of Airliner by Discovering Correlation between Flight and Weather Data - Journal of Big Data.” * *SpringerOpen*, Springer International Publishing, 20 Sept. 2019, https://journalofbigdata.springeropen.com/articles/10.1186/ s40537-019-0251-y.
 
 Bureau of Transportation Statistics. * *Reporting Carrier On-Time Performance (1987-Present)* * , Sept. 2021, https://www.transtats.bts.gov/Fields.asp?gnoyr_VQ=FGJ. Accessed 2021.
-Egilmez, Gokhan. “Classifying a Flight with Naive Bayes Classifier.” * *Kaggle* * , Kaggle, 2 Nov. 2020, https:// www.kaggle.com/gokhanegilmez/classifying-a-flight-with-naive-bayes-classifier.
+
+Egilmez, Gokhan. “Classifying a Flight with Naive Bayes Classifier.” * *Kaggle*, Kaggle, 2 Nov. 2020, https:// www.kaggle.com/gokhanegilmez/classifying-a-flight-with-naive-bayes-classifier.
