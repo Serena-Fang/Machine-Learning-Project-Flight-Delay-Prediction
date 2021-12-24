@@ -96,7 +96,7 @@ Finally, we had several considerations for future improvement. Firstly, besides 
 (https://drive.google.com/drive/folders/1lUGmQqyiSFFVjII-tNU4h19MMtxJ0afZ?usp=sharing)
 
 # Citations
-* *Cost of Delay Estimates 2019 - Federal Aviation Administration.* 8 July 2020, https://www.faa.gov/ data_research/aviation_data_statistics/media/cost_delay_estimates.pdf.
+*Cost of Delay Estimates 2019 - Federal Aviation Administration.* 8 July 2020, https://www.faa.gov/ data_research/aviation_data_statistics/media/cost_delay_estimates.pdf.
 
 Etani, Noriko. “Development of a Predictive Model for on-Time Arrival Flight of Airliner by Discovering Correlation between Flight and Weather Data - Journal of Big Data.” * *SpringerOpen*, Springer International Publishing, 20 Sept. 2019, https://journalofbigdata.springeropen.com/articles/10.1186/ s40537-019-0251-y.
 
