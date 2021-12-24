@@ -43,9 +43,7 @@ months’ data. Also, we dropped some features that won’t be helpful for fligh
 2. Features with high correlation with other features: We used Pearson correlation matrix to investigate correlation between the numerical features (Figure 1). To prevent collinearity, we dropped the estimated arrival time and the estimated elapsed time for their high correlation with the estimated departure time and the estimated distance respectively (r = 0.71, r = 0.99).
 3. Features with very low correlation with the target: For day of month and day of week, which had correlations of as low as r = 0.021 and 0.0044 with the target. We decided to convert them to categorical variables for further preprocessing.
 
-<img width="483" alt="Screenshot 2021-11-30 at 3 00 32 PM" src="https://user-images.githubusercontent.com/73702692/144119334-bf168d2b-42c6-4e06-b382-8239f08e9432.png">
-<img width="495" alt="Screenshot 2021-11-30 at 3 00 39 PM" src="https://user-images.githubusercontent.com/73702692/144119353-b02795cf-7df2-46cf-865c-cb9832f9ad6c.png">
-<img width="524" alt="Screenshot 2021-11-30 at 3 00 45 PM" src="https://user-images.githubusercontent.com/73702692/144119368-4e2b4087-c040-420b-ba2f-c95540eea2e7.png">
+<img width="878" alt="Screenshot 2021-12-24 at 5 59 25 PM" src="https://user-images.githubusercontent.com/73702692/147373837-94fbfbe8-f85d-4bbe-89c8-ad82cb802af0.png">
 
 ## - Exploratory Data Analysis:
 We used exploratory data analysis to see the distribution of categorical features. Figure 2 demonstrated the distribution of the average delay rate in each day of month and in each day of week. We observed variance across different days of month that might be informative in the model. Thus, we kept them as the categorical variables.
@@ -73,6 +71,9 @@ Because of the ML algorithm's sensitivity to the relative scales of features,”
 ## - Modeling Choices, Pipeline, and Evaluation:
 For our first two categorical feature handling approaches, we experimented with logistic regression, decision tree, and random forest. We acknowledged that 1) m-estimate encoding needed tuning of the smoothing factor m, 2) we wanted that in cross validation, the m-estimate encoder would only fit the out-of- fold data for transformation such that there was no validation data leakage, and 3) we needed standard 
 scaling after the encoding. Therefore, we built pipelines with sklearn.pipeline. Pipeline to combine different preprocessing strategies and the models (Figure 4).
+
+<img width="917" alt="Screenshot 2021-12-24 at 5 58 44 PM" src="https://user-images.githubusercontent.com/73702692/147373824-746a3ebf-fc01-406c-bce3-2e770efe3e73.png">
+
 We tuned the hyperparameters in these pipelines with tune_sklearn.TuneSearchCV (Table 3). We adopted a random search within the selected range of hyperparameters and conducted 5-fold cross validations. Finally, we selected the pipeline with the highest CV f2 score, because we aimed to focus more on recall and precision that previous work might overlook. We decided to assign heavier weight to recall because we believed it was less acceptable to be told a flight is on time when it was not.
 
 <img width="986" alt="Screenshot 2021-12-24 at 5 53 10 PM" src="https://user-images.githubusercontent.com/73702692/147373754-fc7bfae3-71e5-4d60-8438-de713de060f2.png">
