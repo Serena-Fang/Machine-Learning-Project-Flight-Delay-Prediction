@@ -28,8 +28,7 @@ Random forest is an ensemble method that predicts the target class based on aver
 * *Categorical Naive Bayes Classifier (sklearn.naive_bayes.CategoricalNB)* *
 Naive Bayes is a statistical model based on Bayes’ theorem and the assumption that the condition features are all independent to each other. Classes are predicted with Equation 3. Specifically, Categorical naive bayes estimates the likelihood P(xi|y)with the same equation used in m-estimate encoding (Equation 1). It was used in this project for its more direct use of posterior probabilities for prediction in contrast to m-estimate, which is a preprocessing step before a selected model was applied on the data.
 
-<img width="319" alt="Screenshot 2021-12-24 at 5 47 09 PM" src="https://user-images.githubusercontent.com/73702692/147373696-58458845-60dd-48fe-9074-6788df4a7aae.png">
-<img width="431" alt="Screenshot 2021-12-24 at 5 47 15 PM" src="https://user-images.githubusercontent.com/73702692/147373697-5b26a344-a2c8-42b8-81a3-cb5be1bde24c.png">
+<img width="964" alt="Screenshot 2021-12-24 at 6 01 34 PM" src="https://user-images.githubusercontent.com/73702692/147373869-6b3cd849-006e-4fd0-8181-3ee860830f4f.png">
 
 # Experiments:
 ## - Data Description:
